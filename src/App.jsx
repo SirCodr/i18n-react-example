@@ -12,7 +12,7 @@ function App() {
           <button
             key={lng}
             style={{
-              fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal'
+              fontWeight: i18n.language === lng ? 'bold' : 'normal'
             }}
             type='submit'
             onClick={() => i18n.changeLanguage(lng)}
